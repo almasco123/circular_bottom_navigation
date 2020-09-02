@@ -23,7 +23,7 @@ class CircularBottomNavigation extends StatefulWidget {
 
   CircularBottomNavigation(this.tabItems,
       {this.selectedPos = 0,
-        this.barHeight = 80,
+        this.barHeight = 60,
         this.barBackgroundColor = Colors.white,
         this.circleSize = 58,
         this.circleStrokeWidth = 4,
@@ -142,6 +142,9 @@ class _CircularBottomNavigationState extends State<CircularBottomNavigation>
             shape: BoxShape.rectangle,
             color: widget.barBackgroundColor,
             boxShadow: [new BoxShadow(color: Colors.grey, blurRadius: 2.0)]),
+      ),
+      Padding(
+        padding: EdgeInsets.only(bottom: 20),
       ),
       top: fullHeight - widget.barHeight,
       left: 0,

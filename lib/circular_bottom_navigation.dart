@@ -143,9 +143,6 @@ class _CircularBottomNavigationState extends State<CircularBottomNavigation>
             color: widget.barBackgroundColor,
             boxShadow: [new BoxShadow(color: Colors.grey, blurRadius: 2.0)]),
       ),
-      Padding(
-        padding: EdgeInsets.only(bottom: 20),
-      ),
       top: fullHeight - widget.barHeight,
       left: 0,
     ));
